@@ -1,0 +1,8 @@
+<button (click)="callChild();">Call Category Child</button>
+<button (click)="product.showMessage()">Call Product Child</button>
+
+<app-product #product></app-product>
+
+<app-category 
+  (showAlert)="showAlert($event)">
+</app-category>
